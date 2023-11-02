@@ -20,6 +20,15 @@ Here's what you'll find in this repository:
   - Visualize point clouds from different data sources.
   - Convert RGB and depth images into a structured point cloud format.
   - Exhibit point clouds using Open3D and Matplotlib for in-depth analysis.
+![matlab_vis](https://user-images.githubusercontent.com/85798077/234074025-d48b5a83-99d5-489e-b5dd-b39458b7f032.png)
+![bunny_matplot](https://user-images.githubusercontent.com/85798077/234074057-093feca4-f26a-472b-9fa3-5d261243bdd0.png)
+
+
+https://user-images.githubusercontent.com/85798077/234074068-8391188a-7c70-4790-bc99-2a353234fc69.mp4
+
+
+
+https://user-images.githubusercontent.com/85798077/234074084-c640d525-062a-42e0-8327-dd6506036c3c.mp4
 
 - `point_cloud_filtering.py`: Demonstrates the art of point cloud filtration. This script includes procedures for subsampling and outlier removal, improving point cloud quality for better analysis results.
 
@@ -33,6 +42,8 @@ Here's what you'll find in this repository:
 - `point_cloud_segmentation.py`: Implements clustering on point cloud data to segment and differentiate between various object clusters.
 
   - Uses DBSCAN algorithm for identifying distinct clusters within the point cloud.
+ 
+  -![Ground_Detection](https://user-images.githubusercontent.com/85798077/234078206-755ecb78-4828-47a0-9a3e-0a3b9e26f39b.png) 
 
 ## Installation
 
@@ -107,15 +118,7 @@ matplotlib
 The repository contains the following files:
 
 **point_cloud_visualization.py:** This is a Python script for visualizing point clouds using Open3D and Matplotlib libraries. The script has a PointCloudVisualization class with methods for generating and displaying point clouds. The numpy_open3d method generates a random 3D numpy array and converts it into an Open3D point cloud object. The rgb_to_pointcloud method takes in a color and depth image and generates an Open3D point cloud object. The display_o3d method displays an Open3D point cloud object using the Open3D visualization window. The display_mpl method displays a numpy array point cloud using a Matplotlib 3D subplot. The run method calls the above methods to create and display point clouds generated from different sources such as uniform sampling from a mesh, RGBD images, and random 3D numpy arrays.
-![matlab_vis](https://user-images.githubusercontent.com/85798077/234074025-d48b5a83-99d5-489e-b5dd-b39458b7f032.png)
-![bunny_matplot](https://user-images.githubusercontent.com/85798077/234074057-093feca4-f26a-472b-9fa3-5d261243bdd0.png)
 
-
-https://user-images.githubusercontent.com/85798077/234074068-8391188a-7c70-4790-bc99-2a353234fc69.mp4
-
-
-
-https://user-images.githubusercontent.com/85798077/234074084-c640d525-062a-42e0-8327-dd6506036c3c.mp4
 
 
 **point_cloud_filtering.py:**
@@ -137,7 +140,7 @@ The script then sets a threshold for ground detection and finds the maximum y-va
 Finally, the script displays the depth image with the ground pixels set to green.
 
 
-![Ground_Detection](https://user-images.githubusercontent.com/85798077/234078206-755ecb78-4828-47a0-9a3e-0a3b9e26f39b.png)
+
 
 **point_cloud_segmentation.py:** This script reads a downsampled point cloud from a PLY file and performs clustering on the points using the DBSCAN algorithm. The resulting clusters are then visualized using different colors. 
 
